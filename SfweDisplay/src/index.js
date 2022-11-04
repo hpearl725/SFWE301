@@ -11,6 +11,11 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    webPreferences:{
+      nodeIntegration: true,
+      contextIsolation: false,
+      enableRemoteModule: true,
+    },
     useContentSize: true,
     frame: false,
     fullscreen: true

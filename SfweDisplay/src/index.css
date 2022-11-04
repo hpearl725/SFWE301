@@ -19,19 +19,20 @@ body {
   color: #ddd;
   text-align: center;
   /* need to figure out how to do dynamic padding maybe js? maybe fixed */
-  padding: 14px 300px;
+  padding: 1% 11%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: xxx-large;
 }
 
-/* Change the color of links on hover */
-/* .topnav a:hover {
+/* Change the color of links on hover  */
+/* if we make the nav bar have drop downs then will need else not */
+.topnav a:hover {
   background-color: #003366;
   color: #ddd;
-} */
+}
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav a:focus {
   background-color: #003366;
   color: white;
 }
