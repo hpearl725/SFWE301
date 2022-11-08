@@ -10,8 +10,8 @@ body {
   background-color: #A41122;;
   overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: start;
+  align-items: stretch;
   position: relative;
   white-space: nowrap ;
 }
@@ -23,7 +23,7 @@ body {
   text-align: center;
   /* need to figure out how to do dynamic padding maybe js? maybe fixed */
   padding: 1% 11%;
-  position: relative;
+  position: static;
   white-space: nowrap ;
 }
 
@@ -31,15 +31,13 @@ body {
 .topnav > div:hover {
   background-color: #003366;
   color: #ddd;
-  position: relative;
+
   white-space: nowrap ;
 }
 
 /* Add a color to the active/current link */
 .topnav > div:focus {
   background-color: #003366;
-  color: white;
-  position:relative;
   white-space: nowrap ;
 }
 
@@ -50,7 +48,7 @@ body {
   display: inline;
   align-items: stretch;
   color: #ddd;
-  text-align: center;
+  text-align: match-parent;
   padding: 1% ;
   text-decoration: none;
   font-size: xxx-large;
@@ -63,7 +61,7 @@ body {
   display: inline;
   align-items: stretch;
   color: #ddd;
-  text-align: center;
+  text-align: match-parent;
   padding: 1% ;
   text-decoration: none;
   font-size: xxx-large;
@@ -96,8 +94,8 @@ ul.dropdown.closed{
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
   height: auto; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   color: #ddd;
-  padding: 0;
-  text-align: center;
+  padding: 0 0 0 0 ;
+  text-align: match-parent;
   position: absolute;
   white-space: nowrap ;
   -webkit-transition: height 0.3s ease;
@@ -106,14 +104,26 @@ ul.dropdown.closed{
 
 ul.dropdown{
   list-style: none; 
-  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  height: auto; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  overflow: visible; /* When ul height is reduced, ensure overflowing li are not shown */
+  position: fixed;
+  float: left;
   background-color: #34495e;
   font-size: xxx-large;
-  /* width: 200px; */
-  margin: 0 auto;
-  padding: 0;
+  margin-top: 1%;
+  margin-right: 1%;
+  padding: 0% 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* display: unset; tbh contents not bad */
+
+  
+  /* width: 10%; */
   text-align: center;
   -webkit-transition: height 0.3s ease;
           transition: height 0.3s ease;
+}
+
+li{
+  margin: 0;
+  padding: 0;
 }
