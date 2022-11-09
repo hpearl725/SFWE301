@@ -4,126 +4,106 @@ body {
   margin: auto;
 }
 
-/* Add a black background color to the top navigation */
-/* formats top nav */
-.topnav {
+div.topnav {
   background-color: #A41122;;
   overflow: hidden;
   display: flex;
-  justify-content: start;
-  align-items: stretch;
+  table-layout: fixed;
+  width: auto;
+  justify-content: space-evenly;
+  /* align-items: stretch; */
+  align-content: center;
   position: relative;
   white-space: nowrap ;
-}
-/* formats all divs in top nav */
-.topnav > div {
-  /* changed marker color?? whenc color changed */
-  align-items: stretch;
-  color: #ddd;
-  text-align: center;
-  /* need to figure out how to do dynamic padding maybe js? maybe fixed */
-  padding: 1% 11%;
-  position: static;
-  white-space: nowrap ;
-}
-
-/* formats divs elems in topnav when hover over */
-.topnav > div:hover {
-  background-color: #003366;
-  color: #ddd;
-
-  white-space: nowrap ;
-}
-
-/* Add a color to the active/current link */
-.topnav > div:focus {
-  background-color: #003366;
-  white-space: nowrap ;
-}
-
-/* -----------------nav-button stuff----------------- */
-
-/* formats elems of nav-button */
-.nav-button{
-  display: inline;
-  align-items: stretch;
-  color: #ddd;
-  text-align: match-parent;
-  padding: 1% ;
-  text-decoration: none;
-  font-size: xxx-large;
-  white-space: nowrap ;
+  box-sizing: border-box;
   
 }
 
-/* formats elems of nav-button closed */
-.nav-button.closed{
-  display: inline;
-  align-items: stretch;
-  color: #ddd;
-  text-align: match-parent;
-  padding: 1% ;
-  text-decoration: none;
-  font-size: xxx-large;
-  white-space: nowrap ;
-}
-
-
-/*
-/* Style the links inside the navigation bar */
-/* need to figure out how to do dynamic padding maybe js? maybe fixed */
-/* .topnav a {
-  align-items: stretch;
-  color: #ddd;
+.topnav > div.btn{
+  /* background-color: gray; */
+  padding: 1% 10%;
+  box-sizing: content-box;
+  width: inherit;
+  display: flex;
+  flex: 1;
   text-align: center;
-  
-  padding: 1% 11%;
-  text-decoration: none;
-  font-size: xxx-large;
-} 
-*/
-
-/* Change the color of links on hover  */
-/* if we make the nav bar have drop downs then will need else not */
-
-
-
-ul.dropdown.closed{
-  list-style-type: none;
-  visibility: hidden;  
-  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  height: auto; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
-  color: #ddd;
-  padding: 0 0 0 0 ;
-  text-align: match-parent;
-  position: absolute;
-  white-space: nowrap ;
-  -webkit-transition: height 0.3s ease;
-          transition: height 0.3s ease;
+  justify-content: center;
+  position: relative;
 }
 
-ul.dropdown{
-  list-style: none; 
-  overflow: visible; /* When ul height is reduced, ensure overflowing li are not shown */
+.topnav >div.btn:hover{
+  background-color: #003366;
+}
+
+.topnav > div.btn > a.nav-button{
+ font-size: xx-large;
+ color:#ddd;
+}
+
+/* make dropdowns as wide as btn's */
+
+
+
+.topnav > div.btn > .dropdown{
+  background-color: #003366;
+  padding: 1% 10%;
+  margin-top: 3%;
+  width: inherit;
   position: fixed;
-  float: left;
-  background-color: #34495e;
-  font-size: xxx-large;
-  margin-top: 1%;
-  margin-right: 1%;
-  padding: 0% 8%;
-  padding-left: 10%;
-  padding-right: 10%;
-  /* display: unset; tbh contents not bad */
+  flex: 2;
+  box-sizing: inherit;
+  font-size: xx-large;
+  /* make this element as wid as its parent */
+  display: flex;
+  flex-direction: column;
+ }
+ /* make div.dropdown line up with div.btn  outside of topnav*/
+ 
+  .topnav > div.btn > .dropdown{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: inherit;
+    flex-wrap: wrap;
+    flex: 1;
+    box-sizing: border-box;
+    /* make this element as wid as its parent */
+    display: flex;
+    flex-direction: column;
+  }
 
-  
-  /* width: 10%; */
+
+
+ .topnav > div.btn > .dropdown.closed{
+  visibility: hidden;
+ }
+
+.bttn{
+  background-color: #003366;
+  color: #ddd;
+  padding: 1% 10%;
+  margin: 1%;
+  width: 100%;
+  display: flex;
+  flex: 1;
   text-align: center;
-  -webkit-transition: height 0.3s ease;
-          transition: height 0.3s ease;
+  justify-content: center;
+  position: relative;
+  font-size: xx-large;
+}
+ 
+/* make each bttns white when hovered over */
+.bttn:hover{
+  background-color: #ddd;
+  color: #003366;
 }
 
-li{
-  margin: 0;
-  padding: 0;
-}
