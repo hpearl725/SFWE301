@@ -31,7 +31,7 @@ div.topnav {
   position: relative;
 }
 
-.topnav >div.btn:hover{
+.topnav >div.btn:active{
   background-color: #003366;
 }
 
