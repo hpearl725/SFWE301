@@ -128,7 +128,7 @@ div.topnav {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 80%;
 }
 
 /* The Close Button */
@@ -147,12 +147,12 @@ div.topnav {
 }
 
 .qr {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
 }
 
 .modalText{
   display:none;
-  float:right; 
-  padding:150px;
+  float:left; 
+  padding: 100px;
 }

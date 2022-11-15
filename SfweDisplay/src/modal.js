@@ -8,16 +8,19 @@ qrspan = document.getElementsByClassName("close")[0];
 
 advBtn.onclick = function(){
   qrmodal.style.display = "block";
+  advText.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 qrspan.onclick = function() {
     qrmodal.style.display = "none";
+    advText.style.display = "none";
   }
   
 window.onclick = function(event) {
     if (event.target == qrmodal) {
       qrmodal.style.display = "none";
+      advText.style.display = "none";
     }
 }
 
