@@ -68,9 +68,43 @@
       </div>
     </div>
 
+     <!-- Slideshow container -->
+     <br>
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers" style="display: flex; justify-content: center;">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="images/software-engineering-hero.jpg" class="ssImage">
+    <div class="Info">Stinky girl</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img src="images/software.png" class="ssImage">
+    <div class="Info">LONG BOI</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img src="images/softwareLaptop.jpeg" class="ssImage">
+    <div class="Info">Laptop with Code</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
     <!-- <div id="pop_up_div"></div> -->
     <script src=active_button.js></script>
     <script src=modal.js></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js%22%3E"></script> -->
   </body>
 </html>
