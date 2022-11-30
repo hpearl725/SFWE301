@@ -261,7 +261,7 @@ div.topnav {
 
 .ticker-container {
   position: absolute;
-  background: tomato;
+  background: #A41122;
 	width: 100%;
 	overflow: hidden;
   margin: 0 auto;
@@ -269,9 +269,15 @@ div.topnav {
 }
 .ticker-text {
 	height: 150%;
-  color: #fafafa;
+  color: #ddd;
   white-space:nowrap;
   display:inline-block;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+h3#tick{
+  font-size: xx-large;
+  margin: 0.75em;
+}
+
+
