@@ -10,6 +10,7 @@ home.addEventListener("click", function (){
     // tmp = document.body.appendChild(document.createElement('div'))
     // tmp.className = 'Home_Popup'
     // tmp.id = 'modal'
+    // $('#result').append($('<div>').load('ajax/test.html'));
     var tmp = $('#pop_up_div').load('test.html');
     this.children[1].classList.toggle('closed');
     if(!news.children[1].classList.contains('closed')){

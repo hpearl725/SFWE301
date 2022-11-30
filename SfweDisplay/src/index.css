@@ -258,3 +258,20 @@ div.topnav {
   margin-left: 300px;
   margin-right: 300px;
 }
+
+.ticker-container {
+  position: absolute;
+  background: tomato;
+	width: 100%;
+	overflow: hidden;
+  margin: 0 auto;
+  bottom: 0px;
+}
+.ticker-text {
+	height: 150%;
+  color: #fafafa;
+  white-space:nowrap;
+  display:inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
