@@ -32,19 +32,21 @@
         <a class="nav-button closed">Quiz</a> 
         <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
         <div class="dropdown closed">
-          <div><a class="bttn">Quiz</a></div>
+          <div><a class="bttn" id="quizBtn">Quiz</a></div>
         </div>
       </div>
  
     </div>
 
     <!-- Div for modal with QR-->
-    <div id="qrmodal" class="modal">
+    <div id="advmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+      <span class="close">&times;</span>
+      <div class="content-styling">
         <img src="images/adviseQR.png" class="qr">
         <p class="modalText" id="advText">Link to Schedule an advising appointment!</p>
+      </div>
       </div>
     </div>
 
@@ -52,12 +54,22 @@
     <div id="discmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+      <span class="close">&times;</span>
+      <div class="content-styling">
         <img src="images/discordQR.png" class="qr">
         <p class="modalText" id="discText">Link to the SFWE discord!</p>
       </div>
+      </div>
     </div>
 
+    <div id="quizmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="content-styling">
+        </div>
+      </div>
+    </div>
      <!-- Slideshow container -->
      <br>
 <div class="slideshow-container fade">

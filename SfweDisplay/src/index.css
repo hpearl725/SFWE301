@@ -107,7 +107,7 @@ div.topnav {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 15%;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -133,6 +133,15 @@ div.topnav {
   height:35%;
 }
 
+.content-styling{
+  display: block;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  font-size: 35px;
+  top: 50%;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -153,11 +162,11 @@ div.topnav {
   width: 200px;
 }
 
-.modalText {
+/* .modalText {
   display: none;
   float: left;
   padding: 100px;
-}
+} */
 
 * {
   box-sizing: border-box
