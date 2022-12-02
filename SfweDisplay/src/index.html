@@ -8,23 +8,14 @@
   </head>
   <body style="background-color:white">
     <div class="topnav">
-      <div id = 1 class="btn">
-        <a class="nav-button closed">Home</a>
-        <div class="dropdown closed">
-          <div><a class="bttn">test</a>
-            
-          </div>
-          <div><a class="bttn">test2</a></div>
-          <div><a class="bttn">test3</a></div>
-        </div>
-      </div>
-
+      
       <div id = 2 class="btn">
-        <a class="nav-button closed">News</a>
-        <div class="dropdown closed">
-          <div><a class="bttn">test</a></div>
-          <div><a class="bttn">test2</a></div>
-          <div><a class="bttn">test3</a></div>
+        <a class="nav-button closed">Degrees</a>
+        <div class="dropdown closed"> 
+          <!-- each button will need to be linked to modal -->
+          <div><a class="bttn">4 Year Plan</a></div> 
+          <div><a class="bttn">Undergraduate</a></div>
+          <div><a class="bttn">Graduate</a></div>
         </div>
       </div>
 
@@ -33,16 +24,15 @@
         <div class="dropdown closed">
           <div><a class="bttn" id="advBtn">Advising</a></div>
           <div><a class="bttn" id="discBtn">Discord</a></div>
-          <div><a class="bttn">test3</a></div>
+          <!-- <div><a class="bttn">test3</a></div> dont think we need this -->
         </div>
       </div>
 
       <div id = 4 class="btn">
-        <a class="nav-button closed">stuff</a>
+        <a class="nav-button closed">Quiz</a> 
+        <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
         <div class="dropdown closed">
-          <div><a class="bttn">test</a></div>
-          <div><a class="bttn">test2</a></div>
-          <div><a class="bttn">test3</a></div>
+          <div><a class="bttn">Quiz</a></div>
         </div>
       </div>
  
@@ -104,22 +94,16 @@
   <span class="dots" onclick="currentSlide(3)"></span>
 </div> 
 
-<br>
-<div class="mainpage">
-Software engineers build the technological infrastructure for our increasingly connected world. They are in high demand to solve complex engineering problems across industries and government, working in areas such as:
-<ul class="unlist">
-<li>aerospace and space exploration</li>
-<li>automation and connectivity</li>
-<li>biomedical modeling and devices</li>
-<li>data, computing and networking</li>
-<li>human and intelligent systems</li>
-<li>natural and fabricated environments</li>
-</ul>
-With an interdisciplinary curriculum that covers large-scale product development and incorporates intensive real-world design, the University of Arizona BS in software engineering prepares students for some of the most coveted technology jobs in the world.
 
-
+<div class = "ticker-container">
+	<div class = "ticker-text">
+    <h3 id="tick"></h3>
+	</div>
 </div>
+
+    <!-- <div id="pop_up_div"></div> -->
     <script src=active_button.js></script>
     <script src=modal.js></script>
+    <script src=ticker.js></script>
   </body>
 </html>
