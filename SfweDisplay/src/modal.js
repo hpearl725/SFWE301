@@ -1,28 +1,29 @@
-qrmodal = document.getElementById("qrmodal")
+advmodal = document.getElementById("advmodal")
 
 advBtn = document.getElementById("advBtn")
 advText =document.getElementById("advText")
 
-// Get the <span> element that closes the modal for qr
-qrspan = document.getElementsByClassName("close")[0];
-
-advBtn.onclick = function(){
-  qrmodal.style.display = "block";
-  advText.style.display = "block";
-}
+// Get the <span> element that closes the modal for adv
+advspan = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-qrspan.onclick = function() {
-    qrmodal.style.display = "none";
-    advText.style.display = "none";
+advspan.onclick = function() {
+  advmodal.style.display = "none";
+  advText.style.display = "none";
+}  
+
+advBtn.onclick = function(){
+  advmodal.style.display = "block";
+  advText.style.display = "block";
+
+  window.onclick = function(event) {
+      if (event.target == advmodal) {
+        advmodal.style.display = "none";
+        advText.style.display = "none";
+      }
   }
-  
-// window.onclick = function(event) {
-//     if (event.target == qrmodal) {
-//       qrmodal.style.display = "none";
-//       advText.style.display = "none";
-//     }
-// }
+}
+
 
 discmodal = document.getElementById("discmodal")
 
@@ -35,6 +36,14 @@ discspan = document.getElementsByClassName("close")[1];
 discBtn.onclick = function(){
   discmodal.style.display = "block";
   discText.style.display = "block";
+
+  window.onclick = function(event) {
+    if (event.target == discmodal) {
+      discmodal.style.display = "none";
+      discText.style.display = "none";
+    }
+
+}
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -43,17 +52,34 @@ discspan.onclick = function() {
     discText.style.display = "none";
   }
   
-window.onclick = function(event) {
-    if (event.target == discmodal) {
-      discmodal.style.display = "none";
-      discText.style.display = "none";
-    }
 
-    if (event.target == qrmodal) {
-      qrmodal.style.display = "none";
-      advText.style.display = "none";
-    }
+
+quizmodal = document.getElementById("quizmodal")
+
+quizBtn = document.getElementById("quizBtn")
+
+// Get the <span> element that closes the modal for qr
+quizspan = document.getElementsByClassName("close")[2];
+
+quizBtn.onclick = function(){
+  quizmodal.style.display = "block";
+  //quizText.style.display = "block";
 }
+
+// When the user clicks on <span> (x), close the modal
+quizspan.onclick = function() {
+    quizmodal.style.display = "none";
+    //quizText.style.display = "none";
+    window.onclick = function(event) {
+      if (event.target == quizmodal) {
+        quizmodal.style.display = "none";
+        //quizText.style.display = "none";
+      }
+  }
+  
+
+}
+
 
 var slidePosition = 1;
 SlideShow(slidePosition);

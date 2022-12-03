@@ -7,13 +7,9 @@ var about = document.getElementById(4)
 
 
 
-
 news.addEventListener("click", function (){
     console.log("news is clicked")
     console.log(this.children[1].classList.toggle('closed'))
-    if(!home.children[1].classList.contains('closed')){
-        home.children[1].classList.toggle('closed');
-    }
     if(!about.children[1].classList.contains('closed')){
         about.children[1].classList.toggle('closed');
     }
@@ -32,9 +28,6 @@ contact.addEventListener("click", function (){
     if(!about.children[1].classList.contains('closed')){
         about.children[1].classList.toggle('closed');
     }
-    if(!home.children[1].classList.contains('closed')){
-        home.children[1].classList.toggle('closed');
-    }
 },false);
 
 about.addEventListener("click", function (){
@@ -44,9 +37,6 @@ about.addEventListener("click", function (){
     console.log(this.children[1].classList.toggle('closed')) // toggles closed
     if(!news.children[1].classList.contains('closed')){
         news.children[1].classList.toggle('closed');
-    }
-    if(!home.children[1].classList.contains('closed')){
-        home.children[1].classList.toggle('closed');
     }
     if(!contact.children[1].classList.contains('closed')){
         contact.children[1].classList.toggle('closed');
