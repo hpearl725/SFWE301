@@ -64,18 +64,19 @@ quizspan = document.getElementsByClassName("close")[2];
 quizBtn.onclick = function(){
   quizmodal.style.display = "block";
   //quizText.style.display = "block";
+  window.onclick = function(event) {
+    if (event.target == quizmodal) {
+      quizmodal.style.display = "none";
+      //quizText.style.display = "none";
+    }
+}
 }
 
 // When the user clicks on <span> (x), close the modal
 quizspan.onclick = function() {
     quizmodal.style.display = "none";
     //quizText.style.display = "none";
-    window.onclick = function(event) {
-      if (event.target == quizmodal) {
-        quizmodal.style.display = "none";
-        //quizText.style.display = "none";
-      }
-  }
+    
   
 
 }
