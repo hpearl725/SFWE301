@@ -129,8 +129,9 @@ div.topnav {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 50%;
-  height:35%;
+  /* height:35%; */
 }
 
 .content-styling{
@@ -321,4 +322,37 @@ h3#tick {
   margin: 0.75em;
 }
 
+#quizText{
+  font-size: xxxx-large;
+  margin-top: 0;
+}
 
+#quiz ul{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#quiz li{
+  text-align: center;
+  margin: 1em 1em;
+  padding: 2%;
+  vertical-align: top;
+  display: inline-block;
+  background-color: #A41122;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#quiz li:hover{
+  text-align: center;
+  margin: 1em 1em;
+  padding: 2%;
+  vertical-align: top;
+  display: inline-block;
+  background-color: #003366;
+  border-radius: 10px;
+  color: #fff;
+}
