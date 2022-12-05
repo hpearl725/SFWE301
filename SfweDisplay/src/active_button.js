@@ -3,7 +3,7 @@ window.$ = window.jQuery = require('jquery');
 
 var news = document.getElementById(2)
 var contact = document.getElementById(3)
-var about = document.getElementById(4)
+var about = document.getElementById("quizBtn")
 
 
 

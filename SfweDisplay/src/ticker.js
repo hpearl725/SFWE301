@@ -5,7 +5,6 @@ let numPrompts;
 let pindex = 0
 fs.readFile('src/ticker_text/ticker.txt', (err, data) => {
     if (err) throw err;
-    console.log(data.toString());
     let file_content = data.toString()
     tarr = data.toString().split(/\r?\n/).filter(element => element);
     txt.innerText = '    🐻⬇️    ' + tarr[0] + '    🐻⬇️    '

@@ -8,7 +8,14 @@
   </head>
   <body style="background-color:white">
     <div class="topnav">
-      
+      <div id = 'whtBtn' class="btn">
+        <a class="nav-button closed">What is Software Engineering?</a>
+        <div class="dropdown closed"> 
+          <!-- each button will need to be linked to modal -->
+          <div><a class="bttn">What is Software Engineering?</a></div> 
+        </div>
+      </div>
+
       <div id = 2 class="btn">
         <a class="nav-button closed">Degrees</a>
         <div class="dropdown closed"> 
@@ -28,11 +35,11 @@
         </div>
       </div>
 
-      <div id = 4 class="btn">
-        <a class="nav-button closed">Quiz</a> 
+      <div class="btn" id="quizBtn">
+        <a class="nav-button closed" >Quiz</a> 
         <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
         <div class="dropdown closed">
-          <div><a class="bttn" id="quizBtn">Quiz</a></div>
+          <div><a class="bttn" >Quiz</a></div>
         </div>
       </div>
  
@@ -62,14 +69,33 @@
       </div>
     </div>
 
+
+
     <div id="quizmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="content-styling">
+          <h1 class="modalText" id="quizText">Software Engineering Quiz</h1>
+          <br/>
+          <div id="quiz"></div>
+          <div id="start"><a>Start</a></div>
         </div>
       </div>
     </div>
+
+
+
+    <div id="whtmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="content-styling">
+          <h3>test</h3>
+        </div>
+      </div>
+    </div>
+
      <!-- Slideshow container -->
      <br>
 <div class="slideshow-container fade">
@@ -117,5 +143,6 @@
     <script src=active_button.js></script>
     <script src=modal.js></script>
     <script src=ticker.js></script>
+    <script src=quiz.js></script>
   </body>
 </html>
