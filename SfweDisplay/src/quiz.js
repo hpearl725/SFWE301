@@ -4,7 +4,7 @@ let qz = document.getElementById("quiz");
 let score = 0;
 let qcount = 1;
 let Qarr =[
-    {Q: "Who is the Software Engineering Department Head?", A: "Sharon O'neal", O: ["Juliana Lincoln", "Sharon O'neal", "Dr. Larry Head", "Dr. Diana Saldana"]},
+    {Q: "Who is the Software Engineering Director?", A: "Sharon O'neal", O: ["Juliana Lincoln", "Sharon O'neal", "Dr. Larry Head", "Dr. Diana Saldana"]},
     {Q: "T/F: Software Engineers are in demand?", A: "True", O: ["True", "False"]},
     {Q: "Which of these is a programming language?", A: "Python", O: ["English++", "StopLang", "Python" ,"Coffee"]},
     {Q: "What does IDE stand for?", A: "Integrated Development Environment", O: ["Internal Document Execution", "Integrated Development Environment", "I Don't Engineer" ,"Ivestigation Department of Engineering"]},
@@ -22,7 +22,7 @@ stbtn.addEventListener("click", function() {
 
 function make_quiz_html(Question){
     let html = `
-    <div class="question"><h4>Q${qcount}: ${Question.Q}</h2></div>
+    <div class="question"><h2>Q${qcount}: ${Question.Q}</h2></div>
     <ul class="options">
         ${make_quiz_options_html(Question.O)}
     </ul>
@@ -63,13 +63,13 @@ document.getElementById("quiz").addEventListener("click", function(e) {
             $('#quiz').append(`<h1>Quiz Finished</h1>`);
             $('#quiz').append(`<h2>Score: ${score} / ${Qarr.length} </h2>`);
             if(score == Qarr.length){
-                $('#quiz').append(`<h4>Perfect Score! You should consider Software Engineering!</h2>`);
+                $('#quiz').append(`<h2>Perfect Score! You should consider Software Engineering!</h2>`);
             }
             else if(score > Qarr.length/2){
-                $('#quiz').append(`<h4>Good Score! You should consider Software Engineering!</h2>`);
+                $('#quiz').append(`<h2>Good Score! You should consider Software Engineering!</h2>`);
             }
             else{
-                $('#quiz').append(`<h4>Nice Try! You should consider Software Engineering!</h2>`);
+                $('#quiz').append(`<h2>Nice Try! You should consider Software Engineering!</h2>`);
             }
             $('#quiz').append(`<div class=btn id=Restart>Restart</div>`);å
         }
