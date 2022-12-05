@@ -14,7 +14,6 @@ a:visited {
 
 div.topnav {
   background-color: #A41122;
-  ;
   overflow: hidden;
   display: flex;
   table-layout: fixed;
@@ -29,7 +28,7 @@ div.topnav {
 }
 
 .topnav>div.btn {
-  padding: 1% 10%;
+  padding: 1% 5%;
   box-sizing: content-box;
   width: inherit;
   display: flex;
@@ -44,7 +43,7 @@ div.topnav {
 }
 
 .topnav>div.btn>a.nav-button {
-  font-size: xx-large;
+  font-size: large;
   color: #ddd;
 }
 
@@ -57,7 +56,7 @@ div.topnav {
   width: inherit;
   flex: 2;
   box-sizing: inherit;
-  font-size: xx-large;
+  font-size: x-large;
   flex-direction: row;
   left: 0;
   right: 0;
@@ -90,7 +89,7 @@ div.topnav {
   text-align: center;
   justify-content: center;
   position: relative;
-  font-size: xx-large;
+  font-size: x-small;
 }
 
 /* make each bttns white when hovered over */
@@ -129,8 +128,9 @@ div.topnav {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 50%;
-  height:35%;
+  /* height:35%; */
 }
 .modal-content-pdf {
   background-color: #fefefe;
@@ -326,4 +326,44 @@ div.topnav {
 h3#tick {
   font-size: xx-large;
   margin: 0.75em;
+}
+
+#quizText{
+  font-size: xx-large;
+  margin-top: 0;
+}
+
+#quiz ul{
+  font-size: large;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#quiz li{
+  text-align: center;
+  margin: 1em 1em;
+  padding: 2%;
+  vertical-align: top;
+  display: inline-block;
+  background-color: #A41122;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#quiz li:hover{
+  text-align: center;
+  margin: 1em 1em;
+  padding: 2%;
+  vertical-align: top;
+  display: inline-block;
+  background-color: #003366;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.questions h2{
+  font-size: large;
 }
