@@ -20,7 +20,7 @@
       <a class="nav-button closed">Degrees Programs</a>
       <div class="dropdown closed"> 
         <!-- each button will need to be linked to modal -->
-        <div><a class="bttn">Undergraduate</a></div> 
+        <div><a class="bttn" id="ungradBtn">Undergraduate</a></div> 
         <div><a class="bttn">Minor</a></div>
       </div>
     </div>>
@@ -41,14 +41,24 @@
         <div><a class="bttn">Quiz</a></div>
       </div>
     </div>
+    </div>
 
-  </div>
+    <!-- Div for modal with Undergrad 4 yr pdf-->
+    <div id="ungradmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-pdf">
+      <span class="close" id="ungradclose">&times;</span>
+      <div class="content-styling">
+        <embed src="../SFWE_Minor_2021-22(1).pdf#toolbar=0" width="100%" height="90%"/>
+      </div>
+      </div>
+    </div>
 
-  <!-- Div for modal with QR-->
-  <div id="advmodal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
+    <!-- Div for modal with QR-->
+    <div id="advmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+      <span class="close" id="advclose">&times;</span>
       <div class="content-styling">
         <img src="images/adviseQR.png" class="qr">
         <p class="modalText" id="advText">Link to Schedule an advising appointment!</p>
@@ -56,11 +66,11 @@
     </div>
   </div>
 
-  <!-- Div for modal with Discord qr-->
-  <div id="discmodal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
+    <!-- Div for modal with Discord qr-->
+    <div id="discmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+      <span class="close" id="discclose">&times;</span>
       <div class="content-styling">
         <img src="images/discordQR.png" class="qr">
         <p class="modalText" id="discText">Link to the SFWE discord!</p>
@@ -70,12 +80,12 @@
 
 
 
-  <div id="quizmodal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="content-styling">
-        <h1 class="modalText" id="quizText">Software Engineering Quiz</h1>
+    <div id="quizmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="quizclose">&times;</span>
+        <div class="content-styling">
+          <h1 class="modalText" id="quizText">Software Engineering Quiz</h1>
 
         <div id="quiz"></div>
         <div id="start"><a>Start</a></div>

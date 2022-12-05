@@ -4,7 +4,7 @@ advBtn = document.getElementById("advBtn")
 advText =document.getElementById("advText")
 
 // Get the <span> element that closes the modal for adv
-advspan = document.getElementsByClassName("close")[0];
+advspan = document.getElementById("advclose")
 
 // When the user clicks on <span> (x), close the modal
 advspan.onclick = function() {
@@ -31,7 +31,7 @@ discBtn = document.getElementById("discBtn")
 discText = document.getElementById("discText")
 
 // Get the <span> element that closes the modal for qr
-discspan = document.getElementsByClassName("close")[1];
+discspan = document.getElementById("discclose");
 
 discBtn.onclick = function(){
   discmodal.style.display = "block";
@@ -59,7 +59,7 @@ quizmodal = document.getElementById("quizmodal")
 quizBtn = document.getElementById("quizBtn")
 
 // Get the <span> element that closes the modal for qr
-quizspan = document.getElementsByClassName("close")[2];
+quizspan = document.getElementById("quizclose");
 
 quizBtn.onclick = function(){
   quizmodal.style.display = "block";
@@ -76,6 +76,30 @@ quizBtn.onclick = function(){
 quizspan.onclick = function() {
     quizmodal.style.display = "none";
     //quizText.style.display = "none";
+}
+
+ungradmodal = document.getElementById("ungradmodal")
+
+ungradBtn = document.getElementById("ungradBtn")
+
+// Get the <span> element that closes the modal for qr
+ungradspan = document.getElementById("ungradclose");
+
+ungradBtn.onclick = function(){
+  ungradmodal.style.display = "block";
+  window.onclick = function(event) {
+    if (event.target == ungradmodal) {
+      ungradmodal.style.display = "none";
+      //ungradText.style.display = "none";
+    }
+}
+  //ungradText.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ungradspan.onclick = function() {
+    ungradmodal.style.display = "none";
+    //ungradText.style.display = "none";
     
   
 
@@ -107,7 +131,6 @@ whtspan.onclick = function() {
   
 
 }
-
 
 var slidePosition = 1;
 SlideShow(slidePosition);
