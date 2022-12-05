@@ -132,7 +132,14 @@ div.topnav {
   width: 50%;
   height:35%;
 }
-
+.modal-content-pdf {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50vw;
+  height:35vw;
+}
 .content-styling{
   display: block;
   margin: auto;

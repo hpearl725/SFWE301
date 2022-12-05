@@ -13,7 +13,7 @@
         <a class="nav-button closed">Degrees</a>
         <div class="dropdown closed"> 
           <!-- each button will need to be linked to modal -->
-          <div><a class="bttn">4 Year Plan</a></div> 
+          <div><a class="bttn" id="ungradBtn">4 Year Plan</a></div> 
           <div><a class="bttn">Undergraduate</a></div>
           <div><a class="bttn">Graduate</a></div>
         </div>
@@ -38,11 +38,23 @@
  
     </div>
 
+    <!-- Div for modal with Undergrad 4 yr pdf-->
+    <div id="ungradmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-pdf">
+      <span class="close" id="ungradclose">&times;</span>
+      <div class="content-styling">
+        <embed src="../SFWE_Minor_2021-22(1).pdf" width="100%" height="90%"/>
+        
+      </div>
+      </div>
+    </div>
+
     <!-- Div for modal with QR-->
     <div id="advmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" id="advclose">&times;</span>
       <div class="content-styling">
         <img src="images/adviseQR.png" class="qr">
         <p class="modalText" id="advText">Link to Schedule an advising appointment!</p>
@@ -54,7 +66,7 @@
     <div id="discmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" id="discclose">&times;</span>
       <div class="content-styling">
         <img src="images/discordQR.png" class="qr">
         <p class="modalText" id="discText">Link to the SFWE discord!</p>
@@ -65,7 +77,7 @@
     <div id="quizmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" id="quizclose">&times;</span>
         <div class="content-styling">
         </div>
       </div>
