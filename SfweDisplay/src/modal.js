@@ -128,8 +128,6 @@ whtspan.onclick = function() {
     whtmodal.style.display = "none";
     //whtText.style.display = "none";
     
-  
-
 }
 
 var slidePosition = 1;
