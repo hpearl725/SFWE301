@@ -105,6 +105,33 @@ ungradspan.onclick = function() {
 
 }
 
+whtmodal = document.getElementById("whtmodal")
+
+whtBtn = document.getElementById("whtBtn")
+
+// Get the <span> element that closes the modal for qr
+whtspan = document.getElementsByClassName("close")[2];
+
+whtBtn.onclick = function(){
+  whtmodal.style.display = "block";
+  //whtText.style.display = "block";
+  window.onclick = function(event) {
+    if (event.target == whtmodal) {
+      whtmodal.style.display = "none";
+      //whtText.style.display = "none";
+    }
+}
+}
+
+// When the user clicks on <span> (x), close the modal
+whtspan.onclick = function() {
+    whtmodal.style.display = "none";
+    //whtText.style.display = "none";
+    
+  
+
+}
+
 var slidePosition = 1;
 SlideShow(slidePosition);
 

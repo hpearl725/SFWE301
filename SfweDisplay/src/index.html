@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>SFWE301 project</title>
-    <link rel="stylesheet" href="index.css" />
 
-  </head>
-  <body style="background-color:white">
-    <div class="topnav">
-      <div id = 'whtBtn' class="btn">
-        <a class="nav-button closed">What is Software Engineering?</a>
-        <div class="dropdown closed"> 
-          <!-- each button will need to be linked to modal -->
-          <div><a class="bttn">What is Software Engineering?</a></div> 
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>SFWE301 project</title>
+  <link rel="stylesheet" href="index.css" />
 
-      <div id = 2 class="btn">
-        <a class="nav-button closed">Degrees</a>
-        <div class="dropdown closed"> 
-          <!-- each button will need to be linked to modal -->
-          <div><a class="bttn" id="ungradBtn">4 Year Plan</a></div> 
-          <div><a class="bttn">Undergraduate</a></div>
-          <div><a class="bttn">Graduate</a></div>
-        </div>
+<body style="background-color:white">
+  <div class="topnav">
+    <div id='whtBtn' class="btn">
+      <a class="nav-button closed">What is Software Engineering?</a>
+      <div class="dropdown closed">
+        <!-- each button will need to be linked to modal -->
+        <div><a class="bttn">What is Software Engineering?</a></div>
       </div>
+    </div>
 
-      <div id = 3 class="btn">
-        <a class="nav-button closed" >Contact Us</a>
-        <div class="dropdown closed">
-          <div><a class="bttn" id="advBtn">Advising</a></div>
-          <div><a class="bttn" id="discBtn">Discord</a></div>
-          <!-- <div><a class="bttn">test3</a></div> dont think we need this -->
-        </div>
+    <div id = 2 class="btn">
+      <a class="nav-button closed">Degrees Programs</a>
+      <div class="dropdown closed"> 
+        <!-- each button will need to be linked to modal -->
+        <div><a class="bttn" id="ungradBtn">Undergraduate</a></div> 
+        <div><a class="bttn">Minor</a></div>
       </div>
+    </div>>
 
-      <div class="btn" id="quizBtn">
-        <a class="nav-button closed" >Quiz</a> 
-        <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
-        <div class="dropdown closed">
-          <div><a class="bttn" >Quiz</a></div>
-        </div>
+    <div id=3 class="btn">
+      <a class="nav-button closed">Contact Us</a>
+      <div class="dropdown closed">
+        <div><a class="bttn" id="advBtn">Advising</a></div>
+        <div><a class="bttn" id="discBtn">Discord</a></div>
+        <!-- <div><a class="bttn">test3</a></div> dont think we need this -->
       </div>
- 
+    </div>
+
+    <div class="btn" id="quizBtn">
+      <a class="nav-button closed">Quiz</a>
+      <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
+      <div class="dropdown closed">
+        <div><a class="bttn">Quiz</a></div>
+      </div>
+    </div>
     </div>
 
     <!-- Div for modal with Undergrad 4 yr pdf-->
@@ -52,7 +50,6 @@
       <span class="close" id="ungradclose">&times;</span>
       <div class="content-styling">
         <embed src="../SFWE_Minor_2021-22(1).pdf#toolbar=0" width="100%" height="90%"/>
-        
       </div>
       </div>
     </div>
@@ -66,8 +63,8 @@
         <img src="images/adviseQR.png" class="qr">
         <p class="modalText" id="advText">Link to Schedule an advising appointment!</p>
       </div>
-      </div>
     </div>
+  </div>
 
     <!-- Div for modal with Discord qr-->
     <div id="discmodal" class="modal">
@@ -78,8 +75,8 @@
         <img src="images/discordQR.png" class="qr">
         <p class="modalText" id="discText">Link to the SFWE discord!</p>
       </div>
-      </div>
     </div>
+  </div>
 
 
 
@@ -90,71 +87,97 @@
         <div class="content-styling">
           <h1 class="modalText" id="quizText">Software Engineering Quiz</h1>
 
-          <div id="quiz"></div>
-          <div id="start"><a>Start</a></div>
+        <div id="quiz"></div>
+        <div id="start"><a>Start</a></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="whtmodal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="content-styling">
+        <div class="col-md-7 my-3">
+          <div class="azo-layout-region h-100">
+            <div>
+              <h3 class="text-blue mt-5 font-weight-bold field__item">
+                College of Engineering
+              </h3>
+            </div>
+            <div>
+              <div id="jump-anchor-program-details-basic" data-jump-status="true" data-jump-label="Program Details">
+                <h2 class="font-weight-medium h1 text-blue mb-5 mt-2">Program Details</h2>
+              </div>
+            </div>
+            <div>
+              <p>Meet the ever-growing demands of the commercial, industrial and federal government job sectors with a
+                Bachelor of Science in Software Engineering.&nbsp;</p>
+              <p>The BS in Software Engineering coherently integrates proven engineering techniques and disciplines with
+                software development best practices that encompass all aspects of the software development lifecycle
+                (SDLC). The curriculum includes core principles from systems engineering, electrical and computer
+                engineering, and software engineering. The curriculum is based on a solid foundation of mathematics,
+                including calculus, physics and discrete math.&nbsp;&nbsp;</p>
+              <p>Relevant software methodologies integral to the curriculum include Agile development, automated testing
+                using continuous integration and Software DevOps. DevOps combines software development (Dev) and IT
+                operations (Ops) to increase software application velocity and service delivery.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- Slideshow container -->
+  <br>
+  <div class="slideshow-container fade">
 
-
-    <div id="whtmodal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="content-styling">
-          <h3>test</h3>
-        </div>
-      </div>
+    <!-- Full images with numbers and message Info -->
+    <div class="Containers" style="display: flex; justify-content: center;">
+      <div class="MessageInfo">1 / 3</div>
+      <img src="images/software-engineering-hero.jpg" class="ssImage">
+      <div class="Info">Using Hand Writing to Text Software to Write Code</div>
     </div>
 
-     <!-- Slideshow container -->
-     <br>
-<div class="slideshow-container fade">
+    <div class="Containers">
+      <div class="MessageInfo">2 / 3</div>
+      <img src="images/software.png" class="ssImage">
+      <div class="Info">SFWE Badge</div>
+    </div>
 
-  <!-- Full images with numbers and message Info -->
-  <div class="Containers" style="display: flex; justify-content: center;">
-    <div class="MessageInfo">1 / 3</div>
-    <img src="images/software-engineering-hero.jpg" class="ssImage">
-    <div class="Info">Using Hand Writing to Text Software to Write Code</div>
+    <div class="Containers">
+      <div class="MessageInfo">3 / 3</div>
+      <img src="images/softwareLaptop.jpeg" class="ssImage">
+      <div class="Info">Laptop with Code</div>
+    </div>
+
+    <!-- Back and forward buttons -->
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The circles/dots -->
+  <div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
   </div>
 
-  <div class="Containers">
-    <div class="MessageInfo">2 / 3</div>
-    <img src="images/software.png" class="ssImage">
-    <div class="Info">SFWE Badge</div>
+
+  <div class="ticker-container">
+    <div class="ticker-text">
+      <h3 id="tick"></h3>
+    </div>
   </div>
 
-  <div class="Containers">
-    <div class="MessageInfo">3 / 3</div>
-    <img src="images/softwareLaptop.jpeg" class="ssImage">
-    <div class="Info">Laptop with Code</div>
-  </div>
+  <!-- <div id="pop_up_div"></div> -->
+  <script src=active_button.js></script>
+  <script src=modal.js></script>
+  <script src=ticker.js></script>
+  <script src=quiz.js></script>
+</body>
 
-  <!-- Back and forward buttons -->
-  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The circles/dots -->
-<div style="text-align:center">
-  <span class="dots" onclick="currentSlide(1)"></span>
-  <span class="dots" onclick="currentSlide(2)"></span>
-  <span class="dots" onclick="currentSlide(3)"></span>
-</div> 
-
-
-<div class = "ticker-container">
-	<div class = "ticker-text">
-    <h3 id="tick"></h3>
-	</div>
-</div>
-
-    <!-- <div id="pop_up_div"></div> -->
-    <script src=active_button.js></script>
-    <script src=modal.js></script>
-    <script src=ticker.js></script>
-    <script src=quiz.js></script>
-  </body>
 </html>
