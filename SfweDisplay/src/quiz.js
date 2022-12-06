@@ -37,7 +37,7 @@ function make_quiz_html(Question){
     // html string template for quiz 
     // NOTE: DO NOT add comments in the html string template unless you want to break the code or know what you are doing
     let html = `
-    <div class="question"><h2>Q${qcount}: ${Question.Q}</h2></div>
+    <div class="question"><h4>Q${qcount}: ${Question.Q}</h4></div>
     <ul class="options">
         ${make_quiz_options_html(Question.O)}
     </ul>
@@ -74,16 +74,15 @@ document.getElementById("quiz").addEventListener("click", function(e) {
         }
         // if there are no more questions to be asked
         else{
-            $('#quiz').append(`<h1>Quiz Finished</h1>`);// add quiz finished message
-            $('#quiz').append(`<h2>Score: ${score} / ${Qarr.length} </h2>`); // add score message
+            $('#quiz').append(`<h3>Final Score: ${score} / ${Qarr.length} </h2>`); // add score message
             if(score == Qarr.length){
-                $('#quiz').append(`<h2>Perfect Score! You should consider Software Engineering!</h2>`); // add perfect score message
+                $('#quiz').append(`<h3>Perfect Score! You should consider Software Engineering!</h2>`); // add perfect score message
             }
             else if(score > Qarr.length/2){
-                $('#quiz').append(`<h2>Good Score! You should consider Software Engineering!</h2>`); // add good score message
+                $('#quiz').append(`<h3>Good Score! You should consider Software Engineering!</h2>`); // add good score message
             }
             else{
-                $('#quiz').append(`<h2>Nice Try! You should consider Software Engineering!</h2>`); // add nice try message
+                $('#quiz').append(`<h3>Nice Try! You should consider Software Engineering!</h2>`); // add nice try message
             }
             $('#quiz').append(`<div class=btn id=Restart>Restart</div>`); // add restart button
         }
