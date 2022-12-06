@@ -6,7 +6,7 @@ let numPrompts; // number of ticker text elements
 let pindex = 0; // index of ticker text element
 
 // read ticker text file, split into array based on newlines, and display first element
-fs.readFile('src/ticker_text/ticker.txt', (error, data) => {
+fs.readFile("C:\\SFWE301\\SfweDisplay\\out\\sfwedisplay-win32-x64\\resources\\app\\src\\ticker_text\\ticker.txt", (error, data) => {
     // if error, throw error
     if(error){throw error;} 
     // convert data to string
