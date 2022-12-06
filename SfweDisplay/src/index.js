@@ -1,3 +1,4 @@
+// require statements
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { electron } = require('process');
