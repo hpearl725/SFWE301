@@ -27,6 +27,10 @@ advBtn.onclick = function(){
         advmodal.style.display = "none";
         advText.style.display = "none";
       }
+
+  // arrow function to set display to none within set timeout which
+  // runs after 30 seconds
+  setTimeout(()=>advmodal.style.display="none", 30000)
   }
 }
 
@@ -50,6 +54,9 @@ discBtn.onclick = function(){
       discText.style.display = "none";
     }
 
+  // arrow function to set display to none within set timeout which
+  // runs after 30 seconds
+  setTimeout(()=>discmodal.style.display="none", 30000)
 }
 }
 
