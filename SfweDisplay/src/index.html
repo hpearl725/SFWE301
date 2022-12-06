@@ -8,15 +8,16 @@
 </head> 
 
 <body style="background-color:white">
-  <div class="topnav">
+  <!-- div for navigation bar -->
+  <div class="topnav"> 
+    <!-- button for what is software engineering -->
     <div id='whtBtn' class="btn">
       <a class="nav-button closed">What is Software Engineering?</a>
       <div class="dropdown closed">
-        <!-- each button will need to be linked to modal -->
         <div><a class="bttn">What is Software Engineering?</a></div>
       </div>
     </div>
-
+    <!-- button for degree programs -->
     <div id = 2 class="btn">
       <a class="nav-button closed">Degrees Programs</a>
       <div class="dropdown closed"> 
@@ -25,7 +26,7 @@
         <div><a class="bttn" id="minorBtn">Minor</a></div>
       </div>
     </div>
-
+    <!-- button for contact us -->
     <div id=3 class="btn">
       <a class="nav-button closed">Contact Us</a>
       <div class="dropdown closed">
@@ -34,7 +35,7 @@
         <!-- <div><a class="bttn">test3</a></div> dont think we need this -->
       </div>
     </div>
-
+    <!-- button for quiz -->
     <div class="btn" id="quizBtn">
       <a class="nav-button closed">Quiz</a>
       <!-- instead of having stuff bellow just make this window do a modal popup for quiz and be the button -->
@@ -49,6 +50,17 @@
       <!-- Modal content -->
       <div class="modal-content-pdf">
       <span class="close" id="ungradclose">&times;</span>
+      <div class="content-styling">
+        <embed src="../SoftwareEngineering22-23.pdf#toolbar=0" width="100%" height="90%"/>
+      </div>
+      </div>
+    </div>
+
+    <!-- Div for modal with minor 4 yr pdf-->
+    <div id="minormodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-pdf">
+      <span class="close" id="minorclose">&times;</span>
       <div class="content-styling">
         <embed src="../SFWE_Minor_2021-22(1).pdf#toolbar=0" width="100%" height="90%"/>
       </div>
@@ -92,7 +104,7 @@
   </div>
 
 
-
+<!--  modal for quiz -->
     <div id="quizmodal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
@@ -107,11 +119,11 @@
   </div>
 
 
-
+<!-- modal for what is software engineering -->
   <div id="whtmodal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" id="whtclose">&times;</span>
       <div class="content-styling">
         <div class="col-md-7 my-3">
           <div class="azo-layout-region h-100">
@@ -179,7 +191,7 @@
     <span class="dots" onclick="currentSlide(3)"></span>
   </div>
 
-
+  <!-- ticker text container -->
   <div class="ticker-container">
     <div class="ticker-text">
       <h3 id="tick"></h3>
@@ -187,6 +199,7 @@
   </div>
 
   <!-- <div id="pop_up_div"></div> -->
+  <!-- scripts  -->
   <script src=active_button.js></script>
   <script src=modal.js></script>
   <script src=ticker.js></script>
