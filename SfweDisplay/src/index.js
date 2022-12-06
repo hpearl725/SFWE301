@@ -16,6 +16,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
+      preload: path.join(__dirname, 'preload.js')
     },
     useContentSize: true,
     frame: false,
